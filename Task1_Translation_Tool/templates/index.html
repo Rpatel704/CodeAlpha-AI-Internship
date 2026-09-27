@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Language Translation Tool</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <h1>🌐 AI Language Translation Tool</h1>
+        <p>Translate text between multiple languages using an online translation API.</p>
+
+        <div class="translator">
+            <div class="field">
+                <label for="sourceLanguage">Source Language</label>
+                <select id="sourceLanguage">
+                    <option value="auto">Auto Detect</option>
+                    {% for name, code in languages.items() %}
+                        <option value="{{ code }}">{{ name }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <div class="field">
+                <label for="targetLanguage">Target Language</label>
+                <select id="targetLanguage">
+                    {% for name, code in languages.items() %}
+                        <option value="{{ code }}" {% if code == "hi" %}selected{% endif %}>{{ name }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+        </div>
+
+        <label for="inputText">Enter text</label>
+        <textarea id="inputText" rows="7" placeholder="Type something to translate..."></textarea>
+
+        <button id="translateButton" onclick="translateText()">Translate</button>
+
+        <div id="status"></div>
+
+        <label for="outputText">Translation</label>
+        <textarea id="outputText" rows="7" readonly placeholder="Your translation will appear here..."></textarea>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

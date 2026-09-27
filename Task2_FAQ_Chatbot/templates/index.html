@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>AI FAQ Chatbot</title>
+</head>
+<body>
+    <h1>🤖 AI FAQ Chatbot</h1>
+    <p>Welcome! Ask a question below.</p>
+
+    <input id="messageInput" type="text" placeholder="Ask your question...">
+    <button onclick="sendMessage()">Send</button>
+
+    <h3>Answer:</h3>
+    <p id="answer"></p>
+
+    <script>
+        async function sendMessage() {
+            const message = document.getElementById("messageInput").value;
+
+            const response = await fetch("/api/chat", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({ message: message })
+            });
+
+            const data = await response.json();
+            document.getElementById("answer").textContent = data.answer;
+        }
+    </script>
+</body>
+</html>

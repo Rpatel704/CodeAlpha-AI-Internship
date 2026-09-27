@@ -1,0 +1,62 @@
+[
+    {
+        "question": "What is the admission process?",
+        "answer": "Students need to complete the online application, submit the required documents, and complete the admission formalities."
+    },
+    {
+        "question": "What documents are required for admission?",
+        "answer": "Common documents include academic certificates, identity proof, photographs, and other documents specified by the institution."
+    },
+    {
+        "question": "How can I pay my fees?",
+        "answer": "Fees can generally be paid through the institution's online payment portal or through the payment methods provided by the administration."
+    },
+    {
+        "question": "How can I check my attendance?",
+        "answer": "Attendance information can usually be checked through the student portal or by contacting the respective department."
+    },
+    {
+        "question": "What is the attendance requirement?",
+        "answer": "Students should maintain the minimum attendance percentage specified by their institution and academic regulations."
+    },
+    {
+        "question": "When are examinations conducted?",
+        "answer": "Examinations are conducted according to the academic calendar released by the institution."
+    },
+    {
+        "question": "Where can I get examination results?",
+        "answer": "Examination results are generally published on the student portal or official examination website."
+    },
+    {
+        "question": "Is there a library facility?",
+        "answer": "Yes, students can use the library according to the library's operating hours and borrowing rules."
+    },
+    {
+        "question": "What are the library timings?",
+        "answer": "Library timings are published by the institution and may vary on working days, weekends, and holidays."
+    },
+    {
+        "question": "How can I contact the administration?",
+        "answer": "You can contact the administration through the official college email address, phone number, or administration office."
+    },
+    {
+        "question": "How can I apply for leave?",
+        "answer": "Students can apply for leave through the prescribed leave application process or student portal."
+    },
+    {
+        "question": "Where can I find my timetable?",
+        "answer": "The latest timetable is usually available through the student portal, department notice board, or official college website."
+    },
+    {
+        "question": "How can I reset my student portal password?",
+        "answer": "Use the password reset option on the student portal. If that does not work, contact the institution's technical support team."
+    },
+    {
+        "question": "How can I contact technical support?",
+        "answer": "You can contact the institution's IT or technical support department through the official support channel."
+    },
+    {
+        "question": "What courses are available?",
+        "answer": "Available courses depend on the institution and academic year. Please refer to the official course catalogue for the current list."
+    }
+]
